@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct BackdropApp: App {
+    let appState = Store(initialState: BackdropState(),
+                         reducer: backdropReducer, environment: <#T##Environment#>)
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
