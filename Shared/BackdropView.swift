@@ -6,16 +6,39 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
-struct BackdropAppView: View {
+struct BackdropView: View {
+    let store: Store<BackdropState, BackdropAction>
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        WithViewStore(store) { viewStore in
+            VStack{
+                HStack {
+                    Button {
+                        viewStore.send(.removeBackground)
+                    } label: {
+                        Text("Remove")
+                    }
+                }
+                Image(uiImage: viewStore.inputImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                
+                Spacer()
+                Image(uiImage: viewStore.outputImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+            }
+            .background(Color.green)
+        }
     }
 }
 
-struct BackdropAppView_Previews: PreviewProvider {
+#if DEBUG
+struct BackdropView_Previews: PreviewProvider {
     static var previews: some View {
-        BackdropAppView()
+        BackdropView(store: sampleStore)
     }
 }
+#endif

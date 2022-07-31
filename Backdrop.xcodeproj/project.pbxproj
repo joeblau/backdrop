@@ -7,20 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDD82D43268E7A6300346625 /* BackdropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D35268E7A6200346625 /* BackdropApp.swift */; };
-		EDD82D44268E7A6300346625 /* BackdropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D35268E7A6200346625 /* BackdropApp.swift */; };
-		EDD82D45268E7A6300346625 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D36268E7A6200346625 /* ContentView.swift */; };
-		EDD82D46268E7A6300346625 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D36268E7A6200346625 /* ContentView.swift */; };
+		EDCF6FDC2896C39A00F39032 /* slack-imgs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDCF6FDB2896C39A00F39032 /* slack-imgs.jpg */; };
+		EDCF6FDD2896C39A00F39032 /* slack-imgs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDCF6FDB2896C39A00F39032 /* slack-imgs.jpg */; };
+		EDD82D43268E7A6300346625 /* Backdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D35268E7A6200346625 /* Backdrop.swift */; };
+		EDD82D44268E7A6300346625 /* Backdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D35268E7A6200346625 /* Backdrop.swift */; };
+		EDD82D45268E7A6300346625 /* BackdropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D36268E7A6200346625 /* BackdropView.swift */; };
+		EDD82D46268E7A6300346625 /* BackdropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D36268E7A6200346625 /* BackdropView.swift */; };
 		EDD82D47268E7A6300346625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD82D37268E7A6300346625 /* Assets.xcassets */; };
 		EDD82D48268E7A6300346625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD82D37268E7A6300346625 /* Assets.xcassets */; };
+		EDD82D53268E7D2800346625 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = EDD82D52268E7D2800346625 /* ComposableArchitecture */; };
+		EDD82D55268E7D5F00346625 /* BackdropReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D54268E7D5F00346625 /* BackdropReducer.swift */; };
+		EDD82D56268E7D5F00346625 /* BackdropReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D54268E7D5F00346625 /* BackdropReducer.swift */; };
+		EDD82D59268E7EF000346625 /* SampleBackdropStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D58268E7EF000346625 /* SampleBackdropStore.swift */; };
+		EDD82D5A268E7EF000346625 /* SampleBackdropStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D58268E7EF000346625 /* SampleBackdropStore.swift */; };
+		EDD82D5D268E802000346625 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = EDD82D5C268E802000346625 /* ComposableArchitecture */; };
+		EDD82D5F268E873400346625 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D5E268E873400346625 /* UIImage+Extension.swift */; };
+		EDD82D60268E873400346625 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D5E268E873400346625 /* UIImage+Extension.swift */; };
+		EDD82D62268E876100346625 /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D61268E876100346625 /* DeepLabV3.mlmodel */; };
+		EDD82D63268E876100346625 /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D61268E876100346625 /* DeepLabV3.mlmodel */; };
+		EDD82D65268E87CA00346625 /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D64268E87CA00346625 /* CIImage+Extension.swift */; };
+		EDD82D66268E87CA00346625 /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD82D64268E87CA00346625 /* CIImage+Extension.swift */; };
+		EDD82D69268E8CC800346625 /* CoreMLHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = EDD82D68268E8CC800346625 /* CoreMLHelpers */; };
+		EDD82D6B268E8D3B00346625 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD82D6A268E8D3B00346625 /* test.jpg */; };
+		EDD82D6C268E8D3B00346625 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDD82D6A268E8D3B00346625 /* test.jpg */; };
+		EDD82D6E268E95D500346625 /* riggs.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDD82D6D268E95D500346625 /* riggs.jpeg */; };
+		EDD82D6F268E95D500346625 /* riggs.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDD82D6D268E95D500346625 /* riggs.jpeg */; };
+		EDD82D71268E95F400346625 /* IMG_3953.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDD82D70268E95F400346625 /* IMG_3953.jpeg */; };
+		EDD82D72268E95F400346625 /* IMG_3953.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDD82D70268E95F400346625 /* IMG_3953.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EDD82D35268E7A6200346625 /* BackdropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropApp.swift; sourceTree = "<group>"; };
-		EDD82D36268E7A6200346625 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EDCF6FDB2896C39A00F39032 /* slack-imgs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "slack-imgs.jpg"; sourceTree = "<group>"; };
+		EDD82D35268E7A6200346625 /* Backdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backdrop.swift; sourceTree = "<group>"; };
+		EDD82D36268E7A6200346625 /* BackdropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropView.swift; sourceTree = "<group>"; };
 		EDD82D37268E7A6300346625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDD82D3C268E7A6300346625 /* Backdrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Backdrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD82D42268E7A6300346625 /* Backdrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Backdrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDD82D54268E7D5F00346625 /* BackdropReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropReducer.swift; sourceTree = "<group>"; };
+		EDD82D58268E7EF000346625 /* SampleBackdropStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBackdropStore.swift; sourceTree = "<group>"; };
+		EDD82D5E268E873400346625 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		EDD82D61268E876100346625 /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3.mlmodel; sourceTree = "<group>"; };
+		EDD82D64268E87CA00346625 /* CIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Extension.swift"; sourceTree = "<group>"; };
+		EDD82D6A268E8D3B00346625 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		EDD82D6D268E95D500346625 /* riggs.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = riggs.jpeg; sourceTree = "<group>"; };
+		EDD82D70268E95F400346625 /* IMG_3953.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3953.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD82D69268E8CC800346625 /* CoreMLHelpers in Frameworks */,
+				EDD82D5D268E802000346625 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD82D53268E7D2800346625 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,17 +77,27 @@
 		EDD82D2F268E7A6200346625 = {
 			isa = PBXGroup;
 			children = (
+				EDD82D57268E7ED500346625 /* Preview */,
 				EDD82D34268E7A6200346625 /* Shared */,
 				EDD82D3D268E7A6300346625 /* Products */,
+				EDD82D5B268E802000346625 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		EDD82D34268E7A6200346625 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				EDD82D35268E7A6200346625 /* BackdropApp.swift */,
-				EDD82D36268E7A6200346625 /* ContentView.swift */,
+				EDCF6FDB2896C39A00F39032 /* slack-imgs.jpg */,
+				EDD82D70268E95F400346625 /* IMG_3953.jpeg */,
+				EDD82D6D268E95D500346625 /* riggs.jpeg */,
+				EDD82D6A268E8D3B00346625 /* test.jpg */,
+				EDD82D61268E876100346625 /* DeepLabV3.mlmodel */,
+				EDD82D35268E7A6200346625 /* Backdrop.swift */,
+				EDD82D36268E7A6200346625 /* BackdropView.swift */,
 				EDD82D37268E7A6300346625 /* Assets.xcassets */,
+				EDD82D54268E7D5F00346625 /* BackdropReducer.swift */,
+				EDD82D5E268E873400346625 /* UIImage+Extension.swift */,
+				EDD82D64268E87CA00346625 /* CIImage+Extension.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -66,6 +109,21 @@
 				EDD82D42268E7A6300346625 /* Backdrop.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EDD82D57268E7ED500346625 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				EDD82D58268E7EF000346625 /* SampleBackdropStore.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		EDD82D5B268E802000346625 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +142,10 @@
 			dependencies = (
 			);
 			name = "Backdrop (iOS)";
+			packageProductDependencies = (
+				EDD82D5C268E802000346625 /* ComposableArchitecture */,
+				EDD82D68268E8CC800346625 /* CoreMLHelpers */,
+			);
 			productName = "Backdrop (iOS)";
 			productReference = EDD82D3C268E7A6300346625 /* Backdrop.app */;
 			productType = "com.apple.product-type.application";
@@ -101,6 +163,9 @@
 			dependencies = (
 			);
 			name = "Backdrop (macOS)";
+			packageProductDependencies = (
+				EDD82D52268E7D2800346625 /* ComposableArchitecture */,
+			);
 			productName = "Backdrop (macOS)";
 			productReference = EDD82D42268E7A6300346625 /* Backdrop.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +197,10 @@
 				Base,
 			);
 			mainGroup = EDD82D2F268E7A6200346625;
+			packageReferences = (
+				EDD82D51268E7D2800346625 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				EDD82D67268E8CC800346625 /* XCRemoteSwiftPackageReference "CoreMLHelpers" */,
+			);
 			productRefGroup = EDD82D3D268E7A6300346625 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,6 +217,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDD82D47268E7A6300346625 /* Assets.xcassets in Resources */,
+				EDD82D71268E95F400346625 /* IMG_3953.jpeg in Resources */,
+				EDCF6FDC2896C39A00F39032 /* slack-imgs.jpg in Resources */,
+				EDD82D6B268E8D3B00346625 /* test.jpg in Resources */,
+				EDD82D6E268E95D500346625 /* riggs.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDD82D48268E7A6300346625 /* Assets.xcassets in Resources */,
+				EDD82D72268E95F400346625 /* IMG_3953.jpeg in Resources */,
+				EDCF6FDD2896C39A00F39032 /* slack-imgs.jpg in Resources */,
+				EDD82D6C268E8D3B00346625 /* test.jpg in Resources */,
+				EDD82D6F268E95D500346625 /* riggs.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,8 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDD82D45268E7A6300346625 /* ContentView.swift in Sources */,
-				EDD82D43268E7A6300346625 /* BackdropApp.swift in Sources */,
+				EDD82D65268E87CA00346625 /* CIImage+Extension.swift in Sources */,
+				EDD82D5F268E873400346625 /* UIImage+Extension.swift in Sources */,
+				EDD82D45268E7A6300346625 /* BackdropView.swift in Sources */,
+				EDD82D59268E7EF000346625 /* SampleBackdropStore.swift in Sources */,
+				EDD82D62268E876100346625 /* DeepLabV3.mlmodel in Sources */,
+				EDD82D43268E7A6300346625 /* Backdrop.swift in Sources */,
+				EDD82D55268E7D5F00346625 /* BackdropReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +257,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDD82D46268E7A6300346625 /* ContentView.swift in Sources */,
-				EDD82D44268E7A6300346625 /* BackdropApp.swift in Sources */,
+				EDD82D66268E87CA00346625 /* CIImage+Extension.swift in Sources */,
+				EDD82D60268E873400346625 /* UIImage+Extension.swift in Sources */,
+				EDD82D46268E7A6300346625 /* BackdropView.swift in Sources */,
+				EDD82D5A268E7EF000346625 /* SampleBackdropStore.swift in Sources */,
+				EDD82D63268E876100346625 /* DeepLabV3.mlmodel in Sources */,
+				EDD82D44268E7A6300346625 /* Backdrop.swift in Sources */,
+				EDD82D56268E7D5F00346625 /* BackdropReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +531,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EDD82D51268E7D2800346625 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		EDD82D67268E8CC800346625 /* XCRemoteSwiftPackageReference "CoreMLHelpers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joeblau/CoreMLHelpers";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EDD82D52268E7D2800346625 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDD82D51268E7D2800346625 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		EDD82D5C268E802000346625 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDD82D51268E7D2800346625 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		EDD82D68268E8CC800346625 /* CoreMLHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDD82D67268E8CC800346625 /* XCRemoteSwiftPackageReference "CoreMLHelpers" */;
+			productName = CoreMLHelpers;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EDD82D30268E7A6200346625 /* Project object */;
 }

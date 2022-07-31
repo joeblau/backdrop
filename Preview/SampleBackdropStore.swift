@@ -5,4 +5,11 @@
 //  Created by Joe Blau on 7/1/21.
 //
 
-import Foundation
+#if DEBUG
+import ComposableArchitecture
+
+let sampleStore = Store(initialState: BackdropState(),
+                        reducer: backdropReducer,
+                        environment: BackdropEnvironment())
+
+#endif
